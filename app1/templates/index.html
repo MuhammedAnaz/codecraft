@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Code Craft</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,family=Oswald"
+    rel="stylesheet">
+  <!-- font awsome cnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
+  {% load static %}
+
+  <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/index">Code Craft</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href=" /">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about">About</a></li>
+          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="/portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="/team">Team</a></li>
+          <li class="dropdown"><a href=""><span>login</span> <i class="fa-solid fa-angle-down"></i></a>
+            <ul>
+              <li><a href="/logn">User Login</a></li>
+              <li><a href="/adminlogin">Admin login </a></li>
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="/about">Get Started</a></li>
+        </ul>
+
+        <i class="fa-solid  fa-angle-down mobile-nav-toggle"></i>
+
+        {% comment %} <i class="bi bi-list mobile-nav-toggle"></i> {% endcomment %}
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Solutions For Your Business</h1>
+          <h2>We are team of talented software Development proffessionals to convert your ideas to application</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Cliens Section ======= -->
+    <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'img/clients/client-1.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'img/clients/client-2.png' %}" class="img-fluid" alt="">
+
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            <img src="{% static 'img/clients/client-3.png' %}" class="img-fluid" alt="">
+
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            <img src="{% static 'img/clients/client-4.png' %}" class="img-fluid" alt="">
+
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            <img src="{% static 'img/clients/client-5.png' %}" class="img-fluid" alt="">
+
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="{% static 'img/clients/client-6.png' %}" class="img-fluid" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Code Craft is a proficient and certified software develpoment firm based in Kochi,india.
+            </p>
+            <h3> What We Do</h3>
+            <ul>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> Custom Software Development
+              </li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> Web Application Development
+              </li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> Mobile Application Development
+              </li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> UI/UX Design</li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i>Enterprise Software Development
+              </li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> Software Product Developmen
+              </li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> Quality Assurance and Testing
+              </li>
+              <li><i class="fa-solid fa-check-double fa-xs" style="color: #266fed;"></i> Maintenance and Support</li>
+
+
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Code craft is a proficient and certified software development firm based in Kochi, India. We began our
+              journey as a Software Development Company in 2022 by developing a customized application. We specialize in
+              business improvement software projects and have the technical, business and project management expertise
+              needed to execute projects. Code Craft is taking rapid strides in the software industry with more than
+              2000 clients ranging from startup companies to multinationals and world-class enterprises all around the
+              world and 100 employees to steer the ship. </p>
+            <a href="#services" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3><strong>Why choose Code Craft?</strong></h3>
+              <p>
+                1. Expertise and Proven Track Record: &nbsp; With a team of skilled professionals, we possess extensive
+                experience in the software development industry. Our technical expertise, combined with a deep
+                understanding of business and project management, enables us to successfully execute software projects
+                of varying complexities.<br> <br>
+
+                2. Client Satisfaction and Trust: &nbsp; We have garnered the trust of more than 2000 clients, ranging
+                from startups to multinationals and world-class enterprises across the globe. This trust is a testament
+                to our commitment to delivering high-quality solutions that align with our clients' objectives and drive
+                their business growth. <br><br>
+
+                3. Comprehensive Service Offering: &nbsp; Our wide range of services caters to diverse software
+                development needs. Whether you require custom software development, web application development, mobile
+                application development, UI/UX design, enterprise software development, software product development,
+                quality assurance and testing, or ongoing maintenance and support, we have the expertise to deliver.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#accordion-list-1"><span>01</span> How
+                    codecraft ensure the quality of software solutions?<i class="fa-solid fa-angle-down"></i><i
+                      class="fa-solid fa-angle-down"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      At Code Craft, quality is our priority. We follow industry best practices and rigorous quality
+                      assurance processes to deliver software solutions of the highest standard. Our experienced team
+                      conducts thorough testing at every stage of development to identify and rectify any issues,
+                      ensuring the reliability, performance, and security of the software.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> What
+                    level of support can you expect after the software is deployed? <i
+                      class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-down"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Our commitment to your success doesn't end with the deployment of the software. We provide
+                      comprehensive maintenance and support services to ensure the smooth operation of your software.
+                      Our dedicated support team is available to address any issues, provide timely updates and patches,
+                      and offer technical assistance whenever you need it.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> How
+                    do we ensure effective communication throughout the project? <i
+                      class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-down"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      We understand the importance of clear and transparent communication in successful project
+                      execution. We assign a dedicated project manager to be your primary point of contact. They will
+                      provide regular updates, address your queries, and ensure that your feedback and concerns are
+                      promptly addressed throughout the development process. <br><br>
+
+                      At Code Craft, we combine our expertise, commitment to quality, comprehensive services, and
+                      effective communication to deliver exceptional software solutions. Partner with us to leverage our
+                      experience and drive your business forward.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("static/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="{% static 'img/skills.png' %}" class="img-fluid" alt="">
+
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Skills</h3>
+            <p class="fst-italic">
+              Technical Expertise
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML, CSS, BOOTSTRAP<i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JAVA, PYTHON, PHP, JAVASCRIPT, RUBY<i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">SPRINGBOOT, DJANGO, LARAVEL, ANGULAR,REACT, VUE.JS, RUBY ON RAILS<i
+                    class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">MySQL, PostgreSQL, MongoDB, Oracle<i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill"> Sketch, Figma, Adobe XD.<i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>"At Code Craft, we offer a comprehensive range of software development services to cater to your business
+            needs. Our team specializes in custom software development, crafting tailor-made solutions that align with
+            your unique requirements. We also excel in web application development, building scalable and secure web
+            applications that enhance your online presence and customer engagement. With expertise in mobile application
+            development, we create user-friendly and innovative apps for both iOS and Android platforms. Our focus on
+            UI/UX design ensures intuitive and visually stunning interfaces that provide seamless user experiences.
+            Additionally, we provide enterprise software development services, developing solutions that streamline your
+            business processes and drive growth. Our dedicated quality assurance and testing team ensures the
+            reliability, performance, and security of your software applications. Partner with us at Code Craft for
+            top-notch software development services."</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+              <img src="{% static 'img/Custom-Development-Header.jpeg' %}" class="img-fluid" alt="">
+              <h4><a href="">Custom Software Development</a></h4>
+              <p>We specialize in developing tailor-made software solutions that address your specific business
+                requirements, providing you with a competitive edge in the market.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box">
+              <!-- <div class="icon"><i class="bx bx-file"></i></div> -->
+              <img src="{% static 'img/download.png' %}" class="img-fluid" alt="">
+              <h4><a href="">Mobile Application Development: </a> <br></h4>
+              <p> We create innovative and user-friendly mobile applications for iOS and Android , allowing you to reach
+                your target audience on their smartphones and tablets.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box">
+              <!-- <div class="icon"><i class="bx bx-tachometer"></i></div> -->
+              <img src="{% static 'img/images.png' %}" class="img-fluid" alt="">
+              <h4><a href="">Web Application Development</a></h4>
+              <p> Our team builds scalable and secure web applications that align with your business goals</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+            data-aos-delay="400">
+            <div class="icon-box">
+              <!-- <div class="icon"><i class="bx bx-layer"></i></div> -->
+              <img src="assets/img/ui.jfif" class="img-fluid" alt="">
+              <img src="{% static 'img/ui.jfif' %}" class="img-fluid" alt="">
+              <h4><a href="">UI/UX Design </a></h4>
+              <p>We focus on creating intuitive and visually stunning user interfaces, ensuring a seamless and engaging
+                user experience across your applications.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Unlock the Potential of Your Busines</h3>
+            <p> Transform your business with our custom software solutions. Contact us now for a free quote and
+              consultation.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Request a Free Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>"Showcasing Our Successful Software Solutions: A Portfolio of Excellence"</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-ui">UI/UX</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/phone-runon-small-left-top2x.png' %}" class="img-fluid " alt="">
+
+
+            </div>
+            <div class="portfolio-info">
+              <h4>RUNON</h4>
+              <!-- <p>Wanted to start running but couldn't force yourself?<br>
+                Try Runon.<br>The only app that will transfer you into
+                a virtual world of beasts,<br> zombies and galactic stories
+                and make you run for your life.</p> -->
+              <a href="static/img/portfolio/phone-runon-small-left-top2x.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 1"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/web1.webp' %}" class="img-fluid " alt="">
+
+            </div>
+            <div class="portfolio-info">
+              <h4>Web Platform for Searching Travel <br>Activities</h4>
+              <!-- <p>An online platform for tourists and travel providers that allows users to find the activity or property fitting their needs precisely</p> -->
+              <a href="static/img/portfolio/web1.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 1"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/cakemix-phone-1-small2x.png' %}" class="img-fluid " alt="">
+
+            </div>
+            <div class="portfolio-info">
+              <h4>CAKEMIX</h4>
+              <!-- <p>The idea behind Cakemix app is to improve
+                your running <br>& workout experience by creating
+                music playlists with<br> custom BPM ranges.</p> -->
+              <a href="static/img/portfolio/cakemix-phone-1-small2x.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 2"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/ui1.webp' %}" class="img-fluid " alt="">
+
+            </div>
+            <div class="portfolio-info">
+              <h4>AI Mobile App design</h4>
+              <!-- <p>Card1</p> -->
+              <a href="static/img/portfolio/ui1.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 1"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/web2.webp' %}" class="img-fluid " alt="">
+
+            </div>
+            <div class="portfolio-info">
+              <h4>Broker Research Platform for Financial Analytics Services</h4>
+              <!-- <p>A web-based SaaS solution for tracking, launching official feedback loops, and evaluating brokerage services</p> -->
+              <a href="static/img/portfolio/web2.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 2"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/reefill-phone-1-small2x.png' %}" class="img-fluid " alt="">
+
+            </div>
+            <div class="portfolio-info">
+              <h4>REEFILL</h4>
+              <!-- <p>Reefill provides a cost-effective, eco-friendly
+                alternative<br> to bottled water. Using the app,
+                members find the nearest <br>station, unlock it,
+                and fill their bottle in seconds. -->
+              </p>
+              <a href="static/img/portfolio/reefill-phone-1-small2x.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="App 3"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/ui2.webp' %}" class="img-fluid " alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Healthcare Mobile App design</h4>
+              <!-- <p>Card2</p> -->
+              <a href="static/img/portfolio/ui2.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 2"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/ui3.webp' %}" class="img-fluid " alt="">
+
+            </div>
+            <div class="portfolio-info">
+              <h4>Mobile App design</h4>
+              <!-- <p>Card3</p> -->
+              <a href="static/img/portfolio/ui3.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Card 3"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img">
+              <img src="{% static 'img/portfolio/web3.webp' %}" class="img-fluid " alt="">
+            </div>
+            <div class="portfolio-info">
+              <h4>Telemedicine appointments management system</h4>
+              <!-- <p>The fully automated business system providing 24/7 access to telemedicine services offered by UK-certified general practitioners and clinicians</p> -->
+              <a href="static/img/portfolio/web3.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Web 3"><i class="fa-solid fa-plus fa-xs"
+                  style="color: #fcfcfd;"></i></a>
+              <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs"
+                  style="color: #f7f7f7;"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>"Meet Our Efficient Team: Passionate Experts Driving Innovation and Excellence"</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic">
+                <img src="{% static 'img/team/1683109162750-removebg-preview (2).png' %}" class="img-fluid " alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Muhammed Anaz N</h4>
+                <span>Chief Executive Officer</span>
+                <p>Passionate about driving innovation and delivering exceptional results for clients. </p>
+                <!-- <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic">
+                <img src="{% static 'img/team/team-2.jpg' %}" class="img-fluid " alt="">
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Experienced in product strategy and delivering user-centric solutions to meet customer needs.</p>
+                <br> <br>
+                <!-- <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic">
+                <img src="{% static 'img/team/team-3.jpg' %}" class="img-fluid " alt="">
+
+
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Ui/Ux Designer</span>
+                <p>Crafting seamless and intuitive user experiences with an eye for detail and a passion for innovative
+                  design.
+                </p>
+                <br> <br>
+                <!-- <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic">
+                <img src="{% static 'img/team/team-4.jpg' %}" class="img-fluid " alt="">
+
+              </div>
+              <div class="member-info">
+                <h4> Anny James</h4>
+                <span> Chief Technology Officer</span>
+                <p>Bringing extensive technical expertise to lead and develop robust and scalable solutions.</p>
+                <br> <br>
+                <!-- <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Choose the plan that suits your needs:</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>PREMIUM UI/UX DESIGN</h3>
+              <h4><sup>$</sup>500
+                <!-- <span>per month</span> -->
+              </h4>
+              <ul>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Customized and Attractive
+                  Designs</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> User-Centered Design
+                  Approach</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Responsive Design</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Prototyping and
+                  Wireframing</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> High-Quality Images and
+                  Graphics</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Consistent Branding</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i>Usability Testing</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Collaboration and
+                  Iteration</li>
+              </ul>
+
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>PREMIUM APP DEVELOPMENT</h3>
+              <h4><sup>$</sup>1500</h4>
+              <ul>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Custom App Development
+                </li>
+                <li> <i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i>Platform Compatibility
+                  (iOS and Android)</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> User-Friendly Interface
+                </li>
+                <li> <i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i>Backend Development</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> API Integration</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Push Notifications</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Security and Data
+                  Protection</li>
+                <li> <i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i>App Store Submission
+                  Assistance</li>
+
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>ADVANCED WEB DEVELOPMENT</h3>
+              <h4><sup>$</sup>1OOO</h4>
+              <ul>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Custom Website Development
+                </li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Responsive Design</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> E-commerce Functionality
+                </li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i>SEO Optimization</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Database Integration</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Cross-Browser
+                  Compatibility</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Security Measures</li>
+                <li><i class="fa-sharp fa-solid fa-check fa-2xs" style="color: #165cd4;"></i> Ongoing Support and
+                  Maintenance </li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>- Find Answers to Common Inquiries</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-question fa-bounce fa-lg" style="color: #2a67cf;"></i> <a data-bs-toggle="collapse"
+                class="collapse" data-bs-target="#faq-list-1"> Do you provide ongoing support and maintenance for the
+                developed apps and websites? &nbsp;&nbsp;<i class="fa-solid fa-angle-down fa-xl"
+                  style="color: #1964e6;"></i> </a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Yes, our Advanced Web Development and Premium App Development packages include ongoing support and
+                  maintenance to ensure the smooth functioning and security of your applications or Website
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-question fa-bounce fa-lg" style="color: #2a67cf;"></i> <a data-bs-toggle="collapse"
+                data-bs-target="#faq-list-2" class="collapsed">Are the apps developed compatible with both iOS and
+                Android platforms? &nbsp; <i class="fa-solid fa-angle-down fa-xl" style="color: #1964e6;"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, our Premium App Development package ensures platform compatibility for both iOS and Android. We
+                  develop apps that work seamlessly across different devices and operating systems.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-question fa-bounce fa-lg" style="color: #2a67cf;"></i> <a data-bs-toggle="collapse"
+                data-bs-target="#faq-list-3" class="collapsed">Can you assist with the submission of my app to app
+                stores?&nbsp;&nbsp; <i class="fa-solid fa-angle-down fa-xl" style="color: #1964e6;"></i> </a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Absolutely! Our Premium App Development package includes app store submission assistance. We guide you
+                  through the submission process to ensure your app meets the necessary requirements.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-question fa-bounce fa-lg" style="color: #2a67cf;"></i> </i> <a
+                data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed"> Is SEO optimization included
+                in the Advanced Web Development package? &nbsp;&nbsp; <i class="fa-solid fa-angle-down fa-xl"
+                  style="color: #1964e6;"></i> </a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, our Advanced Web Development package includes SEO optimization to improve your website's
+                  visibility in search engine results and drive organic traffic to your site.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="fa-solid fa-question fa-bounce fa-lg" style="color: #2a67cf;"></i> </i> <a
+                data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Do you provide usability
+                testing for the UI/UX designs?&nbsp;&nbsp; <i class="fa-solid fa-angle-down fa-xl"
+                  style="color: #1964e6;"></i> </a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, our Premium UI/UX Design package includes usability testing to ensure that the designs are
+                  user-friendly and intuitive, providing a seamless experience for your target audience.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+
+
+    <style>
+      /* Table Styling */
+      .info table {
+        /* Add styles to the table */
+        width: 100%;
+        /* Add more styles as needed */
+      }
+
+      .info th,
+      .info td {
+        /* Add styles to the table header (th) and table data (td) cells */
+        padding: 10px;
+        /* Add more styles as needed */
+      }
+
+      /* Submit Button Styling */
+      .text-center button[type="submit"] {
+        /* Add styles to the submit button */
+        background-color: #174dab;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        /* Add more styles as needed */
+      }
+
+      .text-center button[type="submit"]:hover {
+        /* Add hover styles for the submit button */
+        background-color: #9c1935;
+        /* Add more styles as needed */
+      }
+    </style>
+
+
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="fa-sharp fa-solid fa-location-dot fa-2xl" style="color: #174dab;"></i>
+                <h4>Location:</h4>
+                <p> Code Craft <br> Kochi, Kerala, 691576</p>
+              </div>
+
+              <div class="email">
+                <i class="fa-solid fa-envelope fa-2xl" style="color: #1b59c5;"></i>
+                <h4>Email:</h4>
+                <p>codecraft@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="fa-solid fa-phone fa-2xl" style="color: #296adb;"></i>
+                <h4>Call:</h4>
+                <p>+91 7025023703</p>
+              </div>
+
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.4572478722!2d76.13611769581759!3d9.98266969804492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1684671411857!5m2!1sen!2sin"
+                width="500" height="290" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch" >
+            <form action="/contact" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              {% comment %} <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> {% endcomment %}
+              <br>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+   
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p>Stay updated with the latest news and updates from our company.</p>
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your email address" required>
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Code Craft</h3>
+            <p>
+              Kochi<br>
+              Kerala, 691576<br>
+              India<br><br>
+              <strong>Phone:</strong> +91 7994680835<br>
+              <strong>Email:</strong> codecraft@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/index">
+                  &nbsp; Home</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/about">
+                  &nbsp; About us</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/services">
+                  &nbsp; Services</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i></i> <a
+                  href="/portfolio"> &nbsp; portfolio</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/team">
+                  &nbsp; Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow us on</p>
+            <div class="social-links mt-3">
+              <a href=" https://twitter.com/Anaz7585?t=8H2Ml8A9J0teQRDNM7pPXQ&s=08" class="twitter"><i
+                  class="fa-brands fa-twitter fa-xl" style="color: #2062d5;"></i></a>
+              <a href="https://www.facebook.com/muhammed.anaz.9883?mibextid=ZbWKwL" class="facebook"><i
+                  class="fa-brands fa-facebook fa-xl" style="color: #336dd1;"></i></a>
+              <a href="https://instagram.com/muhammedanaz7?igshid=ZDdkNTZiNTM=" class="instagram"><i
+                  class="fa-brands fa-square-instagram fa-xl" style="color: #0353dd;"></i></a>
+              <a href="https://www.linkedin.com/in/muhammed-anaz-n-507b89212" class="linkedin"><i
+                  class="fa-brands fa-linkedin fa-xl" style="color: #346bcb;"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Code Craft</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by Team code Craft
+      </div>
+
+
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="fa-solid fa-arrow-up fa-2xl" style="color: #2045d9;"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/glightbox.min.js' %}"></script>
+  <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'js/validate.js' %}"></script>
+  <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'js/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Page - </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- font awsome cnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Vendor CSS Files -->
+   {% load static %}
+   <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+   <link href="{% static 'css/boxicons.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/glightbox.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/remixicon.css' %}" rel="stylesheet">
+   <link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet">
+ 
+ 
+   <!-- Template Main CSS File -->
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href=" /">Code Craft</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href=" /">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about">About</a></li>
+          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link scrollto" href="/team">Team</a></li>
+         
+        </ul>
+        <i class="fa-solid  fa-angle-down mobile-nav-toggle"></i>
+        {% comment %} <i class="bi bi-list mobile-nav-toggle"></i> {% endcomment %}
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href=" /">Home</a></li>
+          <li>Portfolio Page</li>
+        </ol>
+        <h2>Portfolio Page</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    
+         <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>"Showcasing Our Successful Software Solutions: A Portfolio of Excellence"</p>
+          </div>
+  
+          <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-ui">UI/UX</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+  
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/phone-runon-small-left-top2x.png' %}" class="img-fluid " alt="">
+  
+              
+              </div>
+              <div class="portfolio-info">
+                <h4>RUNON</h4>
+                <!-- <p>Wanted to start running but couldn't force yourself?<br>
+                  Try Runon.<br>The only app that will transfer you into
+                  a virtual world of beasts,<br> zombies and galactic stories
+                  and make you run for your life.</p> -->
+                <a href="static/img/portfolio/phone-runon-small-left-top2x.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/web1.webp' %}" class="img-fluid " alt="">
+  
+              </div>
+              <div class="portfolio-info">
+                <h4>Web Platform for Searching Travel <br>Activities</h4>
+                <!-- <p>An online platform for tourists and travel providers that allows users to find the activity or property fitting their needs precisely</p> -->
+                <a href="static/img/portfolio/web1.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 1"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/cakemix-phone-1-small2x.png' %}" class="img-fluid " alt="">
+  
+              </div>
+              <div class="portfolio-info">
+                <h4>CAKEMIX</h4>
+                <!-- <p>The idea behind Cakemix app is to improve
+                  your running <br>& workout experience by creating
+                  music playlists with<br> custom BPM ranges.</p> -->
+                <a href="static/img/portfolio/cakemix-phone-1-small2x.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/ui1.webp' %}" class="img-fluid " alt="">
+  
+              </div>
+              <div class="portfolio-info">
+                <h4>AI Mobile App design</h4>
+                <!-- <p>Card1</p> -->
+                <a href="static/img/portfolio/ui1.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/web2.webp' %}" class="img-fluid " alt="">
+  
+              </div>
+              <div class="portfolio-info">
+                <h4>Broker Research Platform for Financial Analytics Services</h4>
+                <!-- <p>A web-based SaaS solution for tracking, launching official feedback loops, and evaluating brokerage services</p> -->
+                <a href="static/img/portfolio/web2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/reefill-phone-1-small2x.png' %}" class="img-fluid " alt="">
+  
+              </div>
+              <div class="portfolio-info">
+                <h4>REEFILL</h4>
+                <!-- <p>Reefill provides a cost-effective, eco-friendly
+                  alternative<br> to bottled water. Using the app,
+                  members find the nearest <br>station, unlock it,
+                  and fill their bottle in seconds. -->
+                  </p>
+                <a href="static/img/portfolio/reefill-phone-1-small2x.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/ui2.webp' %}" class="img-fluid " alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Healthcare Mobile App design</h4>
+                <!-- <p>Card2</p> -->
+                <a href="static/img/portfolio/ui2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-ui">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/ui3.webp' %}" class="img-fluid " alt="">
+  
+              </div>
+              <div class="portfolio-info">
+                <h4>Mobile App design</h4>
+                <!-- <p>Card3</p> -->
+                <a href="static/img/portfolio/ui3.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img">
+                <img src="{% static 'img/portfolio/web3.webp' %}" class="img-fluid " alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Telemedicine appointments management system</h4>
+                <!-- <p>The fully automated business system providing 24/7 access to telemedicine services offered by UK-certified general practitioners and clinicians</p> -->
+                <a href="static/img/portfolio/web3.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="fa-solid fa-plus fa-xs" style="color: #fcfcfd;"></i></a>
+                <a href="/portfoliodetails" class="details-link" title="More Details"><i class="fa-solid fa-link fa-2xs" style="color: #f7f7f7;"></i></a>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Portfolio Section -->
+      
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Code Craft</h3>
+            <p>
+              Kochi<br>
+              Kerala, 691576<br>
+              India<br><br>
+              <strong>Phone:</strong> +91 7994680835<br>
+              <strong>Email:</strong> codecraft@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/index">  &nbsp; Home</a></li>
+             <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/about">   &nbsp; About us</a></li>
+             <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/services">  &nbsp; Services</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i></i> <a href="/portfolio">  &nbsp; portfolio</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/team">  &nbsp; Team</a></li> 
+            </ul> 
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow us on</p>
+            <div class="social-links mt-3">
+              <a href=" https://twitter.com/Anaz7585?t=8H2Ml8A9J0teQRDNM7pPXQ&s=08" class="twitter"><i class="fa-brands fa-twitter fa-xl" style="color: #2062d5;"></i></a>
+              <a href="https://www.facebook.com/muhammed.anaz.9883?mibextid=ZbWKwL" class="facebook"><i class="fa-brands fa-facebook fa-xl" style="color: #336dd1;"></i></a>
+              <a href="https://instagram.com/muhammedanaz7?igshid=ZDdkNTZiNTM=" class="instagram"><i class="fa-brands fa-square-instagram fa-xl" style="color: #0353dd;"></i></a>
+              <a href="https://www.linkedin.com/in/muhammed-anaz-n-507b89212" class="linkedin"><i class="fa-brands fa-linkedin fa-xl" style="color: #346bcb;"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #2045d9;"></i></a>
+ <!-- Vendor JS Files -->
+ <script src="{% static 'js/aos.js' %}"></script>
+ <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+ <script src="{% static 'js/glightbox.min.js' %}"></script>
+ <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+ <script src="{% static 'js/validate.js' %}"></script>
+ <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+ <script src="{% static 'js/noframework.waypoints.js' %}"></script>
+
+
+
+
+ <!-- Template Main JS File -->
+ <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/* Add your custom login page styles here */
+body {
+    background-image: url("/static/img/iphone-791450.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;}
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:  black;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p a {
+    color: #3498db;
+  }
+  

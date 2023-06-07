@@ -1,0 +1,70 @@
+body {
+    background-image: url("/static/img/iphone-791450.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .register-container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(16, 8, 136);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .register-container .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .register-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-container input[type="text"],
+  .register-container input[type="number"],
+  .register-container input[type="email"],
+  .register-container input[type="tel"],
+  .register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .register-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(16, 8, 136);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .register-container p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .register-container p a {
+    color: #4e73df;
+  }
+  
+  .register-container p a:hover {
+    text-decoration: underline;
+  }
+  

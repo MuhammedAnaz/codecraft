@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>User form</title>
+    {% load static %}
+    <link rel="stylesheet"  href="{% static 'css/admin.css'%}" />
+  </head>
+  <body>
+    <main>
+      <form action="/adminlogin_view" method="post">
+         {% csrf_token %}
+      <div class="card">
+        <div class="card-form">
+          <h1>Admin login</h1>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+          <label for="pass">Password:</label>
+          <input type="password" name="password" />
+          <button class="btn">Login</button>
+           {% if error_message %}
+             <p>{{ error_message }}</p>
+           {% endif %}
+
+        </div>
+        <div class="card-pic">
+          <img src="{% static 'img/Orange Black Hummingbird Tech Digital Bird Logo (1).jpg' %}" alt="" />
+        </div>
+      </div>
+    </form>
+    </main>
+  </body>
+</html>

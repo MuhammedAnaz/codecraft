@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Inner Page - </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- font awsome cnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+   <!-- Vendor CSS Files -->
+   {% load static %}
+   <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+   <link href="{% static 'css/boxicons.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/glightbox.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/remixicon.css' %}" rel="stylesheet">
+   <link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet">
+ 
+ 
+   <!-- Template Main CSS File -->
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+   <style>
+    /* Table Styling */
+    .info table {
+      /* Add styles to the table */
+      width: 100%;
+      /* Add more styles as needed */
+    }
+
+    .info th,
+    .info td {
+      /* Add styles to the table header (th) and table data (td) cells */
+      padding: 10px;
+      /* Add more styles as needed */
+    }
+
+    /* Submit Button Styling */
+    .text-center button[type="submit"] {
+      /* Add styles to the submit button */
+      background-color: #174dab;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      /* Add more styles as needed */
+    }
+
+    .text-center button[type="submit"]:hover {
+      /* Add hover styles for the submit button */
+      background-color: #9c1935;
+      /* Add more styles as needed */
+    }
+    
+    
+    
+  </style>
+
+
+
+   
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href=" /">Code Craft</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href=" /">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about">About</a></li>
+          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link   scrollto" href="/portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="/team">Team</a></li>
+           
+          </li>
+        </ul>
+        {% comment %} <i class="bi bi-list mobile-nav-toggle"></i> {% endcomment %}
+        <i class="fa-solid  fa-angle-down mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href=" /">Home</a></li>
+          <li>Contact  Page</li>
+        </ol>
+       
+
+      </div>
+    </section><!-- End Breadcrumbs -->  
+
+
+  
+         <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact ">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="fa-sharp fa-solid fa-location-dot fa-2xl" style="color: #174dab;"></i>
+                  <h4>Location:</h4>
+                  <p> Code Craft <br> Kochi, Kerala, 691576</p>
+                </div>
+  
+                <div class="email">
+                  <i class="fa-solid fa-envelope fa-2xl" style="color: #1b59c5;"></i>
+                  <h4>Email:</h4>
+                  <p>codecraft@gmail.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="fa-solid fa-phone fa-2xl" style="color: #296adb;"></i>
+                  <h4>Call:</h4>
+                  <p>+91 7025023703</p>
+                </div>
+  
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.4572478722!2d76.13611769581759!3d9.98266969804492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1684671411857!5m2!1sen!2sin" width="400" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="/contact" method="post" >
+                {% csrf_token %}
+                <div class="row">
+                  <div class="form-group ">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group ">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email"  required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <br>
+                 {% comment %} <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div> {% endcomment %}
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+  
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Code Craft</h3>
+            <p>
+              Kochi<br>
+              Kerala, 691576<br>
+              India<br><br>
+              <strong>Phone:</strong> +91 7994680835<br>
+              <strong>Email:</strong> codecraft@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/index">  &nbsp; Home</a></li>
+             <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/about">   &nbsp; About us</a></li>
+             <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/services">  &nbsp; Services</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i></i> <a href="/portfolio">  &nbsp; portfolio</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/team">  &nbsp; Team</a></li> 
+            </ul> 
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow us on</p>
+            <div class="social-links mt-3">
+              <a href=" https://twitter.com/Anaz7585?t=8H2Ml8A9J0teQRDNM7pPXQ&s=08" class="twitter"><i class="fa-brands fa-twitter fa-xl" style="color: #2062d5;"></i></a>
+              <a href="https://www.facebook.com/muhammed.anaz.9883?mibextid=ZbWKwL" class="facebook"><i class="fa-brands fa-facebook fa-xl" style="color: #336dd1;"></i></a>
+              <a href="https://instagram.com/muhammedanaz7?igshid=ZDdkNTZiNTM=" class="instagram"><i class="fa-brands fa-square-instagram fa-xl" style="color: #0353dd;"></i></a>
+              <a href="https://www.linkedin.com/in/muhammed-anaz-n-507b89212" class="linkedin"><i class="fa-brands fa-linkedin fa-xl" style="color: #346bcb;"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #2045d9;"></i></a>
+ <!-- Vendor JS Files -->
+ <script src="{% static 'js/aos.js' %}"></script>
+ <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+ <script src="{% static 'js/glightbox.min.js' %}"></script>
+ <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+ <script src="{% static 'js/validate.js' %}"></script>
+ <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+ <script src="{% static 'js/noframework.waypoints.js' %}"></script>
+
+
+
+
+ <!-- Template Main JS File -->
+ <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

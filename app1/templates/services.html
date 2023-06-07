@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Inner Page - </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+   <!-- font awsome cnjs-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Vendor CSS Files -->
+   {% load static %}
+   <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+   <link href="{% static 'css/boxicons.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/glightbox.min.css' %}" rel="stylesheet">
+   <link href="{% static 'css/remixicon.css' %}" rel="stylesheet">
+   <link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet">
+ 
+ 
+   <!-- Template Main CSS File -->
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href=" /">Code Craft</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href=" /">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about">About</a></li>
+          <li><a class="nav-link   scrollto" href="/portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="/team">Team</a></li>
+         
+        </ul>
+        <i class="fa-solid  fa-angle-down mobile-nav-toggle"></i>
+        {% comment %} <i class="bi bi-list mobile-nav-toggle"></i> {% endcomment %}
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href=" /">Home</a></li>
+          <li>Services Page</li>
+        </ol>
+        <h2>Services Page</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+         <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>"At Code Craft, we offer a comprehensive range of software development services to cater to your business needs. Our team specializes in custom software development, crafting tailor-made solutions that align with your unique requirements. We also excel in web application development, building scalable and secure web applications that enhance your online presence and customer engagement. With expertise in mobile application development, we create user-friendly and innovative apps for both iOS and Android platforms. Our focus on UI/UX design ensures intuitive and visually stunning interfaces that provide seamless user experiences. Additionally, we provide enterprise software development services, developing solutions that streamline your business processes and drive growth. Our dedicated quality assurance and testing team ensures the reliability, performance, and security of your software applications.  Partner with us at Code Craft for top-notch software development services."</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+                <img src="{% static 'img/Custom-Development-Header.jpeg' %}" class="img-fluid" alt="">
+                <h4><a href="">Custom Software Development</a></h4>
+                <p>We specialize in developing tailor-made software solutions that address your specific business requirements, providing you with a competitive edge in the market.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <!-- <div class="icon"><i class="bx bx-file"></i></div> -->
+                <img src="{% static 'img/download.png' %}" class="img-fluid" alt="">
+                <h4><a href="">Mobile Application Development: </a> <br></h4>
+                <p> We create innovative and user-friendly mobile applications for iOS and Android , allowing you to reach your target audience on their smartphones and tablets.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <!-- <div class="icon"><i class="bx bx-tachometer"></i></div> -->
+                <img src="{% static 'img/images.png' %}" class="img-fluid" alt="">
+                <h4><a href="">Web Application Development</a></h4>
+                <p> Our team builds scalable and secure web applications that align with your business goals</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+              <div class="icon-box">
+                <!-- <div class="icon"><i class="bx bx-layer"></i></div> -->
+                <img src="assets/img/ui.jfif" class="img-fluid"      alt="">
+                <img src="{% static 'img/ui.jfif' %}" class="img-fluid" alt="">
+                <h4><a href="">UI/UX Design </a></h4>
+                <p>We focus on creating intuitive and visually stunning user interfaces, ensuring a seamless and engaging user experience across your applications.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Code Craft</h3>
+            <p>
+              Kochi<br>
+              Kerala, 691576<br>
+              India<br><br>
+              <strong>Phone:</strong> +91 7994680835<br>
+              <strong>Email:</strong> codecraft@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/index">  &nbsp; Home</a></li>
+             <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i><a href="/about">   &nbsp; About us</a></li>
+             <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/services">  &nbsp; Services</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i></i> <a href="/portfolio">  &nbsp; portfolio</a></li>
+              <li><i class="fa-sharp fa-solid fa-greater-than fa-xs" style="color: #2163d4;"></i> <a href="/team">  &nbsp; Team</a></li> 
+            </ul> 
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Follow us on</p>
+            <div class="social-links mt-3">
+              <a href=" https://twitter.com/Anaz7585?t=8H2Ml8A9J0teQRDNM7pPXQ&s=08" class="twitter"><i class="fa-brands fa-twitter fa-xl" style="color: #2062d5;"></i></a>
+              <a href="https://www.facebook.com/muhammed.anaz.9883?mibextid=ZbWKwL" class="facebook"><i class="fa-brands fa-facebook fa-xl" style="color: #336dd1;"></i></a>
+              <a href="https://instagram.com/muhammedanaz7?igshid=ZDdkNTZiNTM=" class="instagram"><i class="fa-brands fa-square-instagram fa-xl" style="color: #0353dd;"></i></a>
+              <a href="https://www.linkedin.com/in/muhammed-anaz-n-507b89212" class="linkedin"><i class="fa-brands fa-linkedin fa-xl" style="color: #346bcb;"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up fa-2xl" style="color: #2045d9;"></i></a>
+ <!-- Vendor JS Files -->
+ <script src="{% static 'js/aos.js' %}"></script>
+ <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+ <script src="{% static 'js/glightbox.min.js' %}"></script>
+ <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+ <script src="{% static 'js/validate.js' %}"></script>
+ <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+ <script src="{% static 'js/noframework.waypoints.js' %}"></script>
+
+
+
+
+ <!-- Template Main JS File -->
+ <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
