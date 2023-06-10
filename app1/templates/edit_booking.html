@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 style="text-align:center">Edit Booking</h1>
+        {% comment %} <form method="POST" action="{% url 'edit_booking' booking.id %}"> {% endcomment %}
+            <form method="POST" action="{% url 'edit_booking' booking_id=booking.id %}">
+
+        
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ booking.name }}">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" id="phone" name="phone" value="{{ booking.phone }}">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" value="{{ booking.email }}">
+            </div>
+            <div class="form-group">
+                <label for="event">Booked Event:</label>
+                <input type="text" class="form-control" id="event" name="event" value="{{ booking.event }}">
+            </div>
+            <div class="form-group">
+                <label for="number_of_persons">No of Persons:</label>
+                <input type="number" class="form-control" id="number_of_persons" name="number_of_persons" value="{{ booking.number_of_persons }}">
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" class="form-control" id="price" name="price" value="{{ booking.price }}">
+            </div>
+            <div class="form-group">
+                <label for="totalprice">Total Price:</label>
+                <input type="number" class="form-control" id="totalprice" name="totalprice" value="{{ booking.totalprice }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</body>
+</html>

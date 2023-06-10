@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 style="text-align:center">Edit Registration</h1>
+        <form method="POST" action="{% url 'edit_registration' reg_id=reg.id %}">
+
+        
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ reg.Name }}">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" value="{{ reg.Age }}">
+            </div>
+           
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" value="{{ reg.Email }}">
+            </div>
+           
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" class="form-control" id="phone" name="phone" 
+                value="{{ reg.Phone_number}}">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="text" class="form-control" id="password" name="password"
+                 value="{{ reg.Password}}">
+            </div>
+            
+           
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</body>
+</html>

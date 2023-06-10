@@ -74,17 +74,13 @@
     <div class="container">
 
       <ol>
-        <li><a href="/events">events</a></li>
+        <!-- <li><a href="/events">events</a></li> -->
         <li>Booking details</li>
       </ol>
       
 
     </div>
   </section><!-- End Breadcrumbs -->
-
-
-    
-
 
 
   <div class="table-responsive mt-5">
@@ -94,13 +90,11 @@
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
-            <th> Booked  Event</th>
+            <th>Booked Event</th>
             <th>No of Persons</th>
-            <th>price</th>
+            <th>Price</th>
             <th>Total Price</th>
-
-         
-            
+            <th>Actions</th> <!-- New column for buttons -->
         </tr>
         {% for i in bookings %}
         <tr>
@@ -112,12 +106,23 @@
             <td>{{ i.number_of_persons }}</td>
             <td>{{ i.price }}</td>
             <td>{{ i.totalprice }}</td>
-            
+            <td>
+              <a href="{% url 'edit_booking' i.id %}" class="btn btn-primary">Edit</a>
+                <!-- <a href="/edit/{{ i.id }}" class="btn btn-primary">Edit</a> -->
+                <!-- <a href="/delete_booking/<int:id>" class="btn btn-danger">Delete</a> -->
+                <a href="{% url 'delete_booking' i.id %}" class="btn btn-danger">Delete</a>
+
+
+            </td>
         </tr>
         {% endfor %}
     </table>
+    
 </div>
-</div>
+
+
+
+
 
      <!-- ======= Footer ======= -->
   <footer id="footer">

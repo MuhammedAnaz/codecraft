@@ -1,0 +1,168 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* CSS styles for the admin dashboard */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidebar {
+      background-color: #f2f2f2;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .sidebar a:hover {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+    }
+
+    .table {
+      margin-top: 20px;
+    }
+    /* CSS styles for the admin dashboard */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #000;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Admin Dashboard</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <ul>
+          <li>&nbsp;Dashboard</li>
+          <li><a href="/contactdetails">Contact details</a></li>
+          <li><a href="/bookingdetails">Booking details</a></li>
+
+          <li><a href="/Registrationdetails">Registration Details</a></li>
+          <li><a href="/admin_logout">Logout</a></li>
+        </ul>
+      </div>
+      <div class="col-md-9 content">
+        <h2>Welcome to the Admin Dashboard</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Muhammed Anaz </td>
+                <td>muhammedanas8587@gmail.com</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>Anu</td>
+                <td>anu123@gmail.com</td>
+                <td>Admin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

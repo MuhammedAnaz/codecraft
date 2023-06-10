@@ -37,6 +37,7 @@
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+
 </head>
 
 <body>
@@ -45,7 +46,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="/index">Code Craft</a></h1>
+      <h1 class="logo me-auto"><a href=" /">Code Craft</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -56,8 +57,7 @@
           <li><a class="nav-link scrollto" href="/services">Services</a></li>
           <li><a class="nav-link   scrollto" href="/portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="/team">Team</a></li>
-          <li class="dropdown"><a href="/userlogout"><span>Logout</span> </a>
-           
+          
         </ul>
         <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
         <i class="fa-solid  fa-angle-down mobile-nav-toggle"></i>
@@ -74,8 +74,8 @@
     <div class="container">
 
       <ol>
-        <li><a href="/events">events</a></li>
-        <li>Events  boooking page</li>
+        <!-- <li><a href="/events">events</a></li> -->
+        <li>Contact details</li>
       </ol>
       
 
@@ -83,131 +83,38 @@
   </section><!-- End Breadcrumbs -->
 
 
+  <div class="table-responsive mt-5">
+    <table class="table table-bordered">
+        <tr>
+            <th>Sl No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+            <th>Actions</th> <!-- New column for buttons -->
+        </tr>
+        {% for i in contacts %}
+        <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.name }}</td>
+            <td>{{ i.email }}</td>
+            <td>{{ i.subject }}</td>
+            <td>{{ i.message }}</td>
+            
+            <td>
+              <a href="{% url 'edit_contact' i.id %}" class="btn btn-primary">Edit</a>
+                <!-- <a href="/edit/{{ i.id }}" class="btn btn-primary">Edit</a> -->
+                <!-- <a href="/delete_booking/<int:id>" class="btn btn-danger">Delete</a> -->
+                <a href="{% url 'delete_contact' i.id %}" class="btn btn-danger">Delete</a>
 
-<style>
-  body {
-      font-family: 'Times New Roman', Times, serif;
-      background-image: url("static/img/iphone-791450.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      
-      
-  }
 
-  .form-container {
-      max-width: 400px;
-      margin: 0 auto;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 20px;
-  }
-
-  h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #442bb1;
-  }
-  .x{color: burlywood}
-
-  label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-  }
-
-  select,
-  input {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-bottom: 10px;
-  }
-
-  button[type="submit"] {
-      background-color: #442bb1;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-      width: 100%;
-  }
-
-  .alert {
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 4px;
-  }
-
-  .alert-success {
-      background-color: #4CAF50;
-      color: white;
-  }
-</style>
-</head>
-
-<div class="form-container mt-5" >
-  <h2>Booking Form</h2>
-  <form method="POST" action="/events_data_store">
-      {% csrf_token %}
-      <label for="event">Select Event:</label>
-      <select id="event" name="event" onchange="updatePrice()">
-          <option value="World Music Festival" data-price="1000">World Music Festival</option>
-          <option value="Rockin' Rhythms" data-price="1500">Rockin' Rhythms</option>
-          <option value="Vibrant Glow" data-price="2000">Vibrant Glow</option>
-          <option value="Electro Beats" data-price="2500">Electro Beats</option>
-      </select>
-
-      <label for="price">Price:</label>
-      <span class="x" id="price">Rs 1000</span>
-      <input type="hidden" id="hidden-price" name="price" value="1000">
-      <br>
-
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="persons">Number of Persons:</label>
-      <input  class="mb-4" type="number" id="persons" name="persons" min="1" required>
-      
-
-      <button type="submit">Book Now</button>
-      <br> <br>
-
-      {% if messages %}
-          {% for message in messages %}
-              <div class="alert alert-success">{{ message }}</div>
-          {% endfor %}
-      {% endif %}
-  </form>
-  
-</div >
-<br><br>
-
-<script>
-  function updatePrice() {
-      var eventSelect = document.getElementById("event");
-      var priceDisplay = document.getElementById("price");
-      var hiddenPriceInput = document.getElementById("hidden-price");
-      var selectedOption = eventSelect.options[eventSelect.selectedIndex];
-      var price = selectedOption.getAttribute("data-price");
-      priceDisplay.textContent = "Rs " + price;
-      hiddenPriceInput.value = price;
-  }
-</script>
-
- </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</div>
+     <!-- ======= Footer ======= -->
   <footer id="footer">
 
     <div class="footer-top">
@@ -266,8 +173,11 @@
         &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-       
-        Designed by  Team Code Craft
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
 
     </div>
@@ -292,5 +202,4 @@
   <script src="{% static 'js/main.js' %}"></script>
 
 </body>
-
 </html>

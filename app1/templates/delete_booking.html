@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('/static/img/lum3n--RBuQ2PK_L8-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .alert-box {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(248, 215, 218, 0.8); /* Updated background color with transparency */
+            border-color: #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-box h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-box p {
+            margin-bottom: 10px;
+        }
+        
+        .delete-btn {
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box">
+        <h1>Delete Booking !</h1>
+        <p>Are you sure you want to delete the booking with ID: {{ booking.id }} and customer name: {{ booking.name }}?</p>
+        <form action="{% url 'delete_contact' id=booking.id %}" method="POST">
+            {% csrf_token %}
+            <button class="delete-btn" type="submit">Delete</button>
+        </form>
+    </div>
+</body>
+</html>
